@@ -14,7 +14,8 @@ public abstract class BaseService<T> implements IService<T> {
 
     @Override
     public DataResult<String> ping() {
-        return new DataResult<String>("running.恭喜-服务正在运行中.");
+    	String str="测试成功";
+        return new DataResult<String>("running.恭喜-服务正在运行中-"+str);
     }
 
     @Autowired
